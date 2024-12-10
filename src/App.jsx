@@ -3,6 +3,8 @@ import Navigation from './components/Navigation'
 import Sidebar from './components/Sidebar'
 import Content from './components/Content'
 import Footer from './components/Footer'
+import NoticiasCards from './components/NoticiasCards'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
@@ -19,8 +21,11 @@ function App() {
         padding: '20px',
         gap: '20px'
       }}>
-        <Sidebar />
-        <Content />
+        <Routes>
+          <Route path="/" element={<><Sidebar /><Content /></>} />
+          <Route path="/defensa" element={<NoticiasCards />} />
+          {/* Aquí van tus otras rutas */}
+        </Routes>
       </main>
       <Footer />
     </div>

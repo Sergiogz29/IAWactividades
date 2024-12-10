@@ -17,6 +17,7 @@ function Navigation() {
         <Button startIcon={<HomeIcon />} variant="contained">Inicio</Button>
         <Button startIcon={<ContactMailIcon />} variant="contained">Contacto</Button>
         <Button startIcon={<BuildIcon />} variant="contained">Servicios</Button>
+        <Button startIcon={<BuildIcon />} variant="contained">Noticias</Button>
       </div>
     </nav>
   )
