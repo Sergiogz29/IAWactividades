@@ -24,7 +24,10 @@ function App() {
         <Routes>
           <Route path="/" element={<><Sidebar /><Content /></>} />
           <Route path="/defensa" element={<NoticiasCards />} />
-          {/* Aquí van tus otras rutas */}
+          <Route path="/gen1" element={<Content />} />
+          <Route path="/gen2" element={<Content />} />
+          <Route path="/gen3" element={<Content />} />
+          <Route path="/contact" element={<Content />} />
         </Routes>
       </main>
       <Footer />
